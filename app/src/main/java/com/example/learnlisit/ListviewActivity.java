@@ -7,7 +7,7 @@ import android.widget.ListView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ListviewActivity extends AppCompatActivity {
-
+//11
     private String[] friend ={"Tony","Mary","John","Jessica","Midicon","Qxx","Pony Ma"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
