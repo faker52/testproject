@@ -13,6 +13,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Send" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xml点击事件"
+        android:onClick="testOnclik"/>
     <Button android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,6 +43,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ListView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6"
+        android:text="overridegetview"/>
 
     <TextView
         android:id="@+id/text"

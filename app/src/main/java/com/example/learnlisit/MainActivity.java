@@ -51,6 +51,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button5:
                 Intent intent4 = new Intent(MainActivity.this,ListViewActivity2.class);
                 startActivity(intent4);
+            case R.id.button6:
+                Intent intent5 = new Intent(MainActivity.this,overridegetview.class);
+                startActivity(intent5);
+                break;
             default:
                 break;
         }
@@ -63,6 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button button3 = (Button) findViewById(R.id.button3);
         Button button4 = (Button) findViewById(R.id.button4);
         Button button5 = (Button) findViewById(R.id.button5);
+        Button button6 = (Button) findViewById(R.id.button6);
         editText = (EditText) findViewById(R.id.edittext);
         button.setOnClickListener(this);
         button1.setOnClickListener(this);
@@ -70,7 +75,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button3.setOnClickListener(this);
         button4.setOnClickListener(this);
         button5.setOnClickListener(this);
+        button6.setOnClickListener(this);
     }
 
-//123
+    public void testOnclik(View view){
+        Toast.makeText(this,"我在xml点击了",Toast.LENGTH_LONG).show();
+    }
+
+
 }

@@ -24,10 +24,13 @@ public class PersonAdapter extends ArrayAdapter<Person> {
     public View getView(int position, View convertView, ViewGroup parent){
         Person person =getItem(position);
         View view= LayoutInflater.from(getContext()).inflate(resoureId,parent,false);
-        ImageView perImage =(ImageView) view.findViewById(R.id.image);
+        ImageView perImage =(ImageView) view.findViewById(R.id.imgtou);
         TextView pername =(TextView) view.findViewById(R.id.name);
+        TextView persay = (TextView) view.findViewById(R.id.says);
+
         perImage.setImageResource(person.getImageid());
         pername.setText(person.getName());
+        persay.setText(person.getText());
         return view;
     }
 

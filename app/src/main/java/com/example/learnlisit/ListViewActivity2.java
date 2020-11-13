@@ -21,14 +21,14 @@ public class ListViewActivity2 extends AppCompatActivity {
     List<Map<String, Object>> listitem = new ArrayList<Map<String, Object>>();
     private String[] friend ={"Tony","Mary","Jessica","Midicon","Qxx","Pony Ma","Donald Trump"};
     private String[] says={"充钱就能变强"};
-    private List<Person> list= new ArrayList<>();
+
     private int[] head={R.drawable.tony,R.drawable.img1,R.drawable.jessica,R.drawable.midicion,R.drawable.qxx,R.drawable.pony,R.drawable.trmp};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listview);
         Initial1();
-        //PersonAdapter adapter = new PersonAdapter(this,R.layout.person_item,list);
+
         SimpleAdapter myAdapter = new SimpleAdapter(this, listitem, R.layout.person_item, new String[]{"touxiang", "name", "says"}, new int[]{R.id.imgtou, R.id.name, R.id.says});
         ListView listView = (ListView) findViewById(R.id.listview);
         listView.setAdapter(myAdapter);

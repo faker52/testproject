@@ -6,9 +6,12 @@ public class Person {
 
     private int Imageid;
 
-    public Person(String name,int Imageid){
+    private String Text;
+
+    public Person(String name,int Imageid,String text){
         this.Imageid=Imageid;
         this.name=name;
+        this.Text=text;
     }
 
     public String getName(){
@@ -17,4 +20,5 @@ public class Person {
     public int getImageid(){
         return Imageid;
     }
+    public String getText(){return Text;}
 }
