@@ -14,7 +14,7 @@ public class ListviewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listview);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>
-                (this,android.R.layout.simple_expandable_list_item_1,friend);
+                (this,android.R.layout.simple_list_item_1,friend);
         ListView listView = (ListView) findViewById(R.id.listview);
         listView.setAdapter(adapter);
 
